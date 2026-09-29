@@ -15,6 +15,14 @@
     /* Keep SD.png and rushdi.jpeg beside this HTML file. */
     .cover{background:#141d43 url("./SD.png") center center/cover no-repeat}
     .cover:before,.cover:after,.cover-label,.spark{display:none}
+    .social-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:22px}
+    .social-link{height:56px;display:flex;align-items:center;justify-content:center;border:1px solid #e8eaf2;border-radius:15px;background:#f7f8fc;color:#4e5973;text-decoration:none;transition:transform .2s,background .2s}
+    .social-link svg{width:23px;height:23px;fill:currentColor}
+    .social-link:hover{transform:translateY(-3px);background:#eeedff}
+    .social-link.whatsapp{color:#20ae65}.social-link.facebook{color:#1877f2}.social-link.linkedin{color:#0a66c2}.social-link.instagram{color:#d34383}
+    .social-link.unset{opacity:.42}
+    .detail .icon{display:grid;place-items:center;margin-top:0;padding:0;line-height:1}
+    .detail .icon svg{display:block;flex:none}
   </style>
 </head>
 <body>
@@ -33,6 +41,12 @@
           <div class="detail"><span class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></svg></span><div><small>Email address</small><a id="displayEmail" href="mailto:aburushed@gmail.com">aburushed@gmail.com</a></div></div>
           <div class="detail"><span class="icon"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><small>Address</small><span id="displayAddress">Uttara, Dhaka</span></div></div>
         </div>
+        <div class="social-row" aria-label="Contact and social links">
+          <a class="social-link whatsapp" id="whatsappLink" href="https://wa.me/8801867120334" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.52 2 2.03 6.47 2.03 11.98c0 1.76.46 3.49 1.34 5L2 22l5.16-1.35a10 10 0 0 0 4.88 1.24h.01c5.52 0 10.01-4.48 10.01-9.99A9.99 9.99 0 0 0 12.04 2Zm0 18.2a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.06.8.82-2.98-.2-.31a8.26 8.26 0 0 1-1.27-4.4 8.2 8.2 0 1 1 8.2 8.22Zm4.5-6.14c-.25-.13-1.48-.73-1.7-.81-.23-.08-.4-.13-.57.12-.17.25-.65.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.38-2-1.22-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.39.1-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.42.08-.17.04-.32-.02-.45-.07-.12-.57-1.36-.78-1.86-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.6c.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.52.61.2 1.16.17 1.59.1.48-.07 1.48-.61 1.69-1.2.21-.59.21-1.09.15-1.2-.06-.1-.22-.17-.47-.29Z"/></svg></a>
+          <a class="social-link facebook" id="facebookLink" href="https://www.facebook.com/rushdi.764932" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook profile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.1 0 2.25.2 2.25.2v2.46h-1.27c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12Z"/></svg></a>
+          <a class="social-link linkedin" id="linkedinLink" href="https://www.linkedin.com/in/abu-rushed" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn profile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.53v16.94c0 .85.69 1.53 1.55 1.53h16.9c.86 0 1.55-.68 1.55-1.53V3.53c0-.85-.69-1.53-1.55-1.53ZM7.93 18.73H4.98V9.2h2.95v9.53ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.28 10.83h-2.94v-4.64c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.72H9.51V9.2h2.82v1.3h.04c.39-.74 1.35-1.53 2.78-1.53 2.97 0 3.58 1.96 3.58 4.5v5.26Z"/></svg></a>
+          <a class="social-link instagram" id="instagramLink" href="https://www.instagram.com/shams.rushdi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram profile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.5-2.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg></a>
+        </div>
         <div class="actions"><a class="action primary" id="callButton" href="tel:01867120334">↗ &nbsp;Call me</a><button class="action" id="saveContact" type="button">＋ &nbsp;Save contact</button></div>
       </div>
       <div class="bottom"><span>Let's stay connected ✦</span><button id="shareButton" type="button">Share card ↗</button></div>
@@ -48,6 +62,9 @@
         <label class="field">Phone number<input name="phone" type="tel" required maxlength="35"></label>
         <label class="field">Email<input name="email" type="email" required maxlength="120"></label>
         <label class="field">Address<textarea name="address" rows="2" maxlength="220"></textarea></label>
+        <label class="field">Facebook profile URL<input name="facebook" type="url" placeholder="https://www.facebook.com/your.profile"></label>
+        <label class="field">LinkedIn profile URL<input name="linkedin" type="url" placeholder="https://www.linkedin.com/in/your-profile"></label>
+        <label class="field">Instagram profile URL<input name="instagram" type="url" placeholder="https://www.instagram.com/your.profile"></label>
         <label class="field">Profile photo<input id="photoInput" type="file" accept="image/*"></label>
         <div class="modal-actions"><button id="cancelEdit" type="button">Cancel</button><button type="submit">Save changes</button></div>
       </form>
@@ -55,7 +72,7 @@
   </div>
   <div class="notice" id="notice" role="status"></div>
   <script>
-    const defaults={name:"Rushdi",role:"Software Developer",phone:"01867120334",email:"aburushed@gmail.com",address:"Uttara, Dhaka",photo:"./rushdi.jpeg"};
+    const defaults={name:"Rushdi",role:"Software Developer",phone:"01867120334",email:"aburushed@gmail.com",address:"Uttara, Dhaka",photo:"./rushdi.jpeg",facebook:"https://www.facebook.com/rushdi.764932",linkedin:"https://www.linkedin.com/in/abu-rushed",instagram:"https://www.instagram.com/shams.rushdi/"};
     let data; try{data={...defaults,...JSON.parse(localStorage.getItem("nfc-card-v2")||"{}")}}catch{data={...defaults}}
     const $=id=>document.getElementById(id);
     function render(){
@@ -63,6 +80,13 @@
       $("displayRole").textContent=data.role;
       $("displayPhone").textContent=data.phone;
       $("displayPhone").href=$("callButton").href="tel:"+data.phone.replace(/[^+0-9]/g,"");
+      $("whatsappLink").href="https://wa.me/"+vcardPhone(data.phone).replace(/\D/g,"");
+      for(const network of ["facebook","linkedin","instagram"]){
+        const link=$(network+"Link"),url=data[network]||"";
+        const valid=network==="facebook"?/^https:\/\/(www\.)?(facebook\.com|fb\.com)\//i.test(url):network==="linkedin"?/^https:\/\/(www\.)?linkedin\.com\/in\//i.test(url):/^https:\/\/(www\.)?instagram\.com\//i.test(url);
+        link.href=valid?url:"#";link.classList.toggle("unset",!valid);
+        link.title=valid?network+" profile":"Add "+network+" link in Edit card";
+      }
       $("displayEmail").textContent=data.email;
       $("displayEmail").href="mailto:"+data.email;
       $("displayAddress").textContent=data.address;
@@ -73,13 +97,13 @@
     }
     render();
     function notify(text){$("notice").textContent=text;$("notice").classList.add("show");setTimeout(()=>$("notice").classList.remove("show"),3500)}
-    $("editButton").onclick=()=>{for(const key of ["name","role","phone","email","address"])$("editForm").elements[key].value=data[key];$("photoInput").value="";$("modalBackdrop").classList.add("open")};
+    $("editButton").onclick=()=>{for(const key of ["name","role","phone","email","address","facebook","linkedin","instagram"])$("editForm").elements[key].value=data[key]||"";$("photoInput").value="";$("modalBackdrop").classList.add("open")};
     $("cancelEdit").onclick=()=> $("modalBackdrop").classList.remove("open");
     $("modalBackdrop").onclick=e=>{if(e.target===$("modalBackdrop"))$("modalBackdrop").classList.remove("open")};
     document.addEventListener("keydown",e=>{if(e.key==="Escape")$("modalBackdrop").classList.remove("open")});
     $("editForm").onsubmit=async e=>{
       e.preventDefault();const form=e.currentTarget;const next={...data};
-      for(const key of ["name","role","phone","email","address"])next[key]=form.elements[key].value.trim();
+      for(const key of ["name","role","phone","email","address","facebook","linkedin","instagram"])next[key]=form.elements[key].value.trim();
       const file=$("photoInput").files[0];
       if(file){if(file.size>2*1024*1024){notify("Please choose a photo smaller than 2 MB.");return}
         next.photo=await new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(reader.result);reader.onerror=reject;reader.readAsDataURL(file)});
@@ -89,6 +113,7 @@
     };
     function escapeVcard(value){return String(value).replace(/\\/g,"\\\\").replace(/\r?\n/g,"\\n").replace(/,/g,"\\,").replace(/;/g,"\\;")}
     function vcardPhone(value){const digits=value.replace(/\D/g,"");return digits.startsWith("0")?"+88"+digits:digits.startsWith("880")?"+"+digits:value.replace(/[^+0-9]/g,"")}
+    for(const network of ["facebook","linkedin","instagram"])$(network+"Link").addEventListener("click",event=>{if($(network+"Link").classList.contains("unset")){event.preventDefault();notify("Add your "+network+" URL in Edit card first.")}});
     $("saveContact").onclick=async()=>{
       const vcard=["BEGIN:VCARD","VERSION:3.0","FN:"+escapeVcard(data.name),"N:;"+escapeVcard(data.name)+";;;","TITLE:"+escapeVcard(data.role),"TEL;TYPE=CELL:"+vcardPhone(data.phone),"EMAIL;TYPE=INTERNET:"+data.email,"ADR;TYPE=HOME:;;"+escapeVcard(data.address)+";;;;","END:VCARD",""].join("\r\n");
       const filename=(data.name.toLowerCase().replace(/[^a-z0-9]+/g,"-")||"contact")+".vcf";
