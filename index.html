@@ -27,7 +27,6 @@
 </head>
 <body>
   <main class="shell">
-    <div class="topbar"><div class="logo">your<span><b>card.</b></span></div><button class="edit-button" id="editButton" type="button">✎ &nbsp;Edit card</button></div>
     <article class="card" aria-label="Digital contact card">
       <div class="cover"><span class="cover-label">Digital contact card</span><span class="spark">✳</span></div>
       <div class="profile">
@@ -51,25 +50,8 @@
       </div>
       <div class="bottom"><span>Let's stay connected ✦</span><button id="shareButton" type="button">Share card ↗</button></div>
     </article>
-    <p class="hint">NFC ট্যাপ করলে এই পেজটি খোলার জন্য পেজটি অনলাইনে প্রকাশ করে তার URL NFC tag-এ লিখুন।</p>
   </main>
-  <div class="modal-backdrop" id="modalBackdrop">
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <h2 id="modalTitle">Edit your card</h2><p>এই ব্রাউজারে তথ্য সংরক্ষিত থাকবে। প্রকাশিত card-এর তথ্য স্থায়ীভাবে বদলাতে HTML-এর default তথ্য পরিবর্তন করুন।</p>
-      <form id="editForm">
-        <label class="field">Full name<input name="name" required maxlength="80"></label>
-        <label class="field">Profession / title<input name="role" maxlength="90"></label>
-        <label class="field">Phone number<input name="phone" type="tel" required maxlength="35"></label>
-        <label class="field">Email<input name="email" type="email" required maxlength="120"></label>
-        <label class="field">Address<textarea name="address" rows="2" maxlength="220"></textarea></label>
-        <label class="field">Facebook profile URL<input name="facebook" type="url" placeholder="https://www.facebook.com/your.profile"></label>
-        <label class="field">LinkedIn profile URL<input name="linkedin" type="url" placeholder="https://www.linkedin.com/in/your-profile"></label>
-        <label class="field">Instagram profile URL<input name="instagram" type="url" placeholder="https://www.instagram.com/your.profile"></label>
-        <label class="field">Profile photo<input id="photoInput" type="file" accept="image/*"></label>
-        <div class="modal-actions"><button id="cancelEdit" type="button">Cancel</button><button type="submit">Save changes</button></div>
-      </form>
-    </div>
-  </div>
+ 
   <div class="notice" id="notice" role="status"></div>
   <script>
     const defaults={name:"Rushdi",role:"Software Developer",phone:"01867120334",email:"aburushed@gmail.com",address:"Uttara, Dhaka",photo:"./rushdi.jpeg",facebook:"https://www.facebook.com/rushdi.764932",linkedin:"https://www.linkedin.com/in/abu-rushed",instagram:"https://www.instagram.com/shams.rushdi/"};
